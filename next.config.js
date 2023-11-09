@@ -1,13 +1,3 @@
-// This file was automatically added by edgio init.
-// You should commit this file to source control.
-const { withEdgio } = require('@edgio/next/config')
+const nextConfig = {};
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-const _preEdgioExport = nextConfig;;
-
-module.exports = (phase, config) =>
-  withEdgio({
-    ..._preEdgioExport
-  })
+module.exports = nextConfig;
