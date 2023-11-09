@@ -14,6 +14,7 @@ export default function Chat() {
 
   return (
     <div className="flex flex-col gap-2 container mx-auto mt-10">
+      <div>GPT-3.5-turbo</div>
       {messages.length > 0 && (
         <div className="border border-gray-200 rounded-lg mb-4 overflow-hidden">
           {messages.map((m) => (
@@ -31,7 +32,6 @@ export default function Chat() {
           ))}
         </div>
       )}
-
       <form
         onSubmit={handleSubmit}
         className="flex items-stretch gap-1 w-full items-stretch"
